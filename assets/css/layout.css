@@ -1,0 +1,239 @@
+/*
+ My Project : Go Green Hero 
+ Author : Adi pebrian
+ Github : https://github.com/Adipebrian/
+ Copyright : 20 Desember 2021
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap");
+/* font-family: 'Bebas Neue', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid black; */
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 9999;
+}
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 3px;
+  transition: all 0.5s;
+  z-index: 99;
+}
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* container */
+.container {
+  padding: 50px 120px;
+}
+
+/* display */
+.dGrid {
+  display: grid;
+}
+.dFlex {
+  display: flex;
+}
+
+/* Colom */
+.col-50 {
+  width: 50%;
+}
+
+/* Heading */
+.heading {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+}
+.t-center {
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  display: flex;
+  padding-top: 30px;
+}
+.btn a:hover {
+  transform: translateY(3px);
+  box-shadow: 2px 2px 2px #000;
+}
+.btn a {
+  text-align: center;
+  width: 180px;
+  background-color: #009e57;
+  text-decoration: none;
+  padding: 8px 0px;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/* hide */
+.hide {
+  display: none;
+}
+.boxContact.hide {
+  display: none;
+  transition: 1s;
+}
+
+/* Responsive */
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav .menu {
+    width: 50%;
+  }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  #home {
+    position: relative;
+  }
+  nav .login .btn_login {
+    display: none;
+  }
+  .container {
+    padding: 20px 40px;
+  }
+  .menu-toggle {
+    display: flex;
+    z-index: 99999;
+  }
+  #home .nav-mobile {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: #009e57;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 9;
+    margin: 0px 10px;
+    transform: translateY(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  #home .nav-mobile.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nav-mobile li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .nav-mobile li a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-mobile .login .btn_login:hover {
+    transform: scale(1.1);
+  }
+  .nav-mobile .login .btn_login {
+    padding: 4px 5px;
+    width: 200px;
+    text-decoration: none;
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+    color: #009e57;
+    background-color: #fff;
+    border-radius: 25px 0px 25px 0px;
+    transition: 0.4s;
+  }
+  .nav-mobile .logo {
+    width: 100px;
+  }
+  .list {
+    display: none;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner .col-50.textBanner {
+    padding-top: 10px;
+  }
+  .col-50 {
+    width: 100%;
+  }
+  .banner .heroBanner img {
+    display: none;
+  }
+  #about {
+    flex-direction: column;
+  }
+  #about .heroAbout img {
+    width: 250px;
+    margin: 20px;
+  }
+  .rank {
+    flex-direction: column;
+  }
+  .rank .col-50.box-no1 {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .rank .col-50.boxContainer {
+    margin-left: 0px;
+  }
+  #contact .boxContact {
+    width: 360px;
+    padding: 8px;
+  }
+  .boxContact .row1 {
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+  }
+  textarea {
+    width: 350px;
+  }
+}

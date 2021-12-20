@@ -1,0 +1,351 @@
+/*
+ My Project : Go Green Hero 
+ Author : Adi pebrian
+ Github : https://github.com/Adipebrian/
+ Copyright : 20 Desember 2021
+*/
+
+/* header */
+nav {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .menu {
+  width: 80%;
+  align-items: center;
+}
+
+nav .menu li {
+  margin-right: 50px;
+  list-style: none;
+}
+
+nav .menu li a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+nav .menu li a {
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  color: #000;
+  transition: 0.5s;
+}
+.nav-mobile {
+  display: none;
+}
+nav .logo {
+  width: 150px;
+}
+
+nav .login {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+}
+nav .login .btn_login:hover {
+  transform: scale(1.1);
+}
+nav .login .btn_login {
+  padding: 4px 5px;
+  width: 100px;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  color: #fff;
+  background-color: #009e57;
+  border-radius: 25px 0px 25px 0px;
+  transition: 0.4s;
+}
+
+/* banner */
+.banner {
+  padding: 40px 0px;
+}
+.banner .textBanner {
+  padding-top: 60px;
+  flex-direction: column;
+}
+
+.banner .headingBanner {
+  font-family: "Bebas Neue", cursive;
+  font-size: 80px;
+  line-height: 80px;
+}
+.banner .subheadingBanner {
+  font-size: 18px;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+}
+
+.banner .textBanner .textLitle {
+  font-family: "Bebas Neue", cursive;
+  font-size: 18px;
+  color: #009e57;
+}
+.banner .heroBanner {
+  display: flex;
+  justify-content: end;
+}
+
+.banner .heroBanner img {
+  width: 480px;
+}
+
+/* About */
+.about {
+  flex-direction: row;
+}
+.about .heroAbout img {
+  width: 400px;
+}
+
+.about .textAbout p {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* start */
+.start {
+  background-color: #009e57;
+}
+.start .waves img {
+  width: 100%;
+}
+.textStart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+.textStart p {
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  color: #fff;
+}
+.border {
+  border: 3px double #fff;
+}
+.m-2 {
+  transform: translateY(10px);
+}
+
+/* Rank */
+.rank {
+  width: 100%;
+  display: flex;
+}
+.rank .box-no1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  width: 400px;
+  height: 600px;
+  background-color: #009e57;
+  border-radius: 5px 50px 5px 50px;
+}
+.rank .box-no1 .imgRank {
+  position: relative;
+}
+.rank .box-no1 .imgRank .user {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px double #fff;
+}
+.rank .box-no1 .imgRank .king {
+  position: absolute;
+  width: 80px;
+  top: -40px;
+  right: -20px;
+}
+.rank .box-no1 .title {
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+.rank .box-no1 .totalTree {
+  display: block;
+  width: 200px;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 0px 30px 0px 30px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  margin: 20px 0px;
+}
+.rank .box-no1 p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  color: #fff;
+}
+.rank .box-no1 .textUser {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+.rank .boxContainer {
+  margin-left: 100px;
+}
+.rank .boxRank {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #009e57;
+  padding: 7px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+.rank .boxRank .no {
+  background-color: #fff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+.rank .boxRank .name {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+.rank .boxRank p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  color: #fff;
+}
+.rank .boxRank .btn_tree {
+  background-color: #fff;
+  padding: 5px 30px;
+  border-radius: 0px 20px 0px 20px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+
+/* Contact */
+.contact {
+  background-color: #009e57;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .btn_click:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.contact .btn_click {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 50%;
+  border: 10px double #000;
+  margin: 20px 0px;
+  transition: 0.4s;
+  /* animation: hide 1s forwards; */
+}
+.contact p {
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+  animation: hide 1s forwards;
+}
+.contact .btn_click img {
+  width: 200px;
+}
+
+.boxContact {
+  width: 600px;
+  border: 4px double #fff;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  /* transition: 1s; */
+  animation: hide 1s forwards ease-in-out;
+}
+@keyframes hide {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.row1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxContact label {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  width: 250px;
+}
+
+.row2 {
+  margin: 20px 0px;
+}
+.submit:hover {
+  cursor: pointer;
+  transform: translateY(6px);
+}
+.submit {
+  padding: 8px 40px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.row3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+textarea {
+  border-radius: 20px;
+}
+.click_back {
+  opacity: 0.8;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: #007e46;
+  padding: 8px;
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer a {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  color: #fff;
+}
